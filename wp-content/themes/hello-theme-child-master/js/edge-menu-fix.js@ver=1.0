@@ -1,0 +1,30 @@
+(function() {
+  const isEdge = navigator.userAgent.includes("Edg");
+  if (!isEdge) return;
+
+  document.querySelectorAll('.e-n-menu-item').forEach((item) => {
+    const content = item.querySelector('.e-n-menu-content');
+    if (!content) return;
+
+    let timeout;
+
+    item.addEventListener('mouseenter', () => {
+      clearTimeout(timeout);
+      content.style.display = 'block';
+    });
+
+    item.addEventListener('mouseleave', () => {
+      timeout = setTimeout(() => {
+        content.style.display = 'none';
+      }, 150);
+    });
+
+    content.addEventListener('mouseenter', () => {
+      clearTimeout(timeout);
+    });
+
+    content.addEventListener('mouseleave', () => {
+      content.style.display = 'none';
+    });
+  });
+})();
