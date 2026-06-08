@@ -5,11 +5,11 @@ padding: 0;
 }
 
 .cards-btn .elementor-button:hover {
-    color: #CB0084;
+    color: #D76AB3;
 }
 
 .cards-btn span.elementor-button-icon svg {
-    color: #CB0084 !important;
+    color: #D76AB3 !important;
     font-size: 20px;
     margin-top: -4px;
     transition: transform 0.3s ease;
