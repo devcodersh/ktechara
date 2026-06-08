@@ -654,149 +654,10 @@
     <meta name="generator" content="Elementor 4.1.1; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-disabled, font_display-swap">
     <meta name="google-site-verification" content="DrlVYbcdDIIb1NF-WEsKauSuMOeY8n9u1vLuHNhuv3U" />
     <!-- Didomi SDK -->
-    <script type="text/javascript">
-        (function() {
-            function i(e) {
-                if (!window.frames[e]) {
-                    if (document.body && document.body.firstChild) {
-                        var t = document.body;
-                        var n = document.createElement("iframe");
-                        n.style.display = "none";
-                        n.name = e;
-                        n.title = e;
-                        t.insertBefore(n, t.firstChild)
-                    } else {
-                        setTimeout(function() {
-                            i(e)
-                        }, 5)
-                    }
-                }
-            }
-
-            function e(n, o, r, f, s) {
-                function e(e, t, n, i) {
-                    if (typeof n !== "function") {
-                        return
-                    }
-                    if (!window[o]) {
-                        window[o] = []
-                    }
-                    var a = false;
-                    if (s) {
-                        a = s(e, i, n)
-                    }
-                    if (!a) {
-                        window[o].push({
-                            command: e,
-                            version: t,
-                            callback: n,
-                            parameter: i
-                        })
-                    }
-                }
-                e.stub = true;
-                e.stubVersion = 2;
-
-                function t(i) {
-                    if (!window[n] || window[n].stub !== true) {
-                        return
-                    }
-                    if (!i.data) {
-                        return
-                    }
-                    var a = typeof i.data === "string";
-                    var e;
-                    try {
-                        e = a ? JSON.parse(i.data) : i.data
-                    } catch (t) {
-                        return
-                    }
-                    if (e[r]) {
-                        var o = e[r];
-                        window[n](o.command, o.version, function(e, t) {
-                            var n = {};
-                            n[f] = {
-                                returnValue: e,
-                                success: t,
-                                callId: o.callId
-                            };
-                            if (i.source) {
-                                i.source.postMessage(a ? JSON.stringify(n) : n, "*")
-                            }
-                        }, o.parameter)
-                    }
-                }
-                if (typeof window[n] !== "function") {
-                    window[n] = e;
-                    if (window.addEventListener) {
-                        window.addEventListener("message", t, false)
-                    } else {
-                        window.attachEvent("onmessage", t)
-                    }
-                }
-            }
-            e("__tcfapi", "__tcfapiBuffer", "__tcfapiCall", "__tcfapiReturn");
-            i("__tcfapiLocator")
-        })();
-    </script>
-    <script type="text/javascript">
-        (function() {
-            (function(e, i, o) {
-                var n = document.createElement("link");
-                n.rel = "preconnect";
-                n.as = "script";
-                var t = document.createElement("link");
-                t.rel = "dns-prefetch";
-                t.as = "script";
-                var r = document.createElement("script");
-                r.id = "spcloader";
-                r.type = "text/javascript";
-                r["async"] = true;
-                r.charset = "utf-8";
-                window.didomiConfig = window.didomiConfig || {};
-                window.didomiConfig.sdkPath = window.didomiConfig.sdkPath || o || "https://sdk.privacy-center.org/";
-                const d = window.didomiConfig.sdkPath;
-                var a = d + e + "/loader.js?target_type=notice&target=" + i;
-                if (window.didomiConfig && window.didomiConfig.user) {
-                    var c = window.didomiConfig.user;
-                    var s = c.country;
-                    var f = c.region;
-                    if (s) {
-                        a = a + "&country=" + s;
-                        if (f) {
-                            a = a + "&region=" + f
-                        }
-                    }
-                }
-                n.href = d;
-                t.href = d;
-                r.src = a;
-                var m = document.getElementsByTagName("script")[0];
-                m.parentNode.insertBefore(n, m);
-                m.parentNode.insertBefore(t, m);
-                m.parentNode.insertBefore(r, m)
-            })("97287281-0be1-45dc-8e19-527958909225", "WKDNURGZ")
-        })();
-    </script>
+     
+     
     <!-- End Didomi SDK -->
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-K9XTLGFS');
-    </script>
-    <!-- End Google Tag Manager -->
+     
     <style>
         .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
         .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
@@ -881,10 +742,7 @@
 <body class="wp-singular page-template-default page page-id-28885 page-child parent-pageid-32362 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-template-full-width elementor-kit-7 elementor-page elementor-page-28885">
 
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9XTLGFS" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+     
 
     <a class="skip-link screen-reader-text" href="../../../our-services/managed-it-services/managed-devices-and-endpoints.html#content">Skip to content</a>
     <header data-elementor-type="header" data-elementor-id="31649" class="elementor elementor-31649 elementor-location-header" data-elementor-post-type="elementor_library">
